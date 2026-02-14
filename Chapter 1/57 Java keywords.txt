@@ -1,0 +1,189 @@
+The 57 Java keywords with their functions, when to use them, and examples
+
+• Data Types and Void
+
+1. boolean: Stores true/false values. Use it for logical decisions.
+Example: boolean isPassed = true;
+
+2. byte: 8-bit integer. Use for small numbers or memory optimization.
+Example: byte b = 100;
+
+3. char: Stores a single character.
+Example: char grade = 'A';
+
+4. double: 64-bit decimal number. Use for precise large floating-point values.
+Example: double price = 99.99;
+
+5. float: 32-bit decimal. Use for smaller decimal numbers.
+Example: float pi = 3.14f;
+
+6. int: 32-bit integer. Use for whole numbers.
+Example: int age = 20;
+
+7. long: 64-bit integer. Use for very large numbers.
+Example: long population = 9000000000L;
+
+8. short: 16-bit integer. Use for small-range integers.
+Example: short year = 2026;
+
+9. void: Indicates a method does not return a value.
+Example: void display() { System.out.println("Hello"); }
+
+• Decision Making
+
+10. if: Executes code if a condition is true.
+Example: if(age >= 18) { System.out.println("Adult"); }
+
+11. else: Executes code if the if condition is false.
+Example: else { System.out.println("Minor"); }
+
+12. switch: Multi-choice decision-making.
+Example: switch(day){ case 1: System.out.println("Monday"); break; }
+
+13. case: Represents an option in switch.
+Example: case 2: System.out.println("Tuesday"); break;
+
+14. default: Executes if no case matches.
+Example: default: System.out.println("Invalid day");
+
+
+• Loops
+
+15. for: Repeats code a specific number of times.
+Example: for(int i=0;i<5;i++){ System.out.println(i); }
+
+16. while: Repeats while condition is true (pre-check).
+Example: while(x>0){ x--; }
+
+17. do: Executes at least once, then checks condition.
+Example: do{ x--; } while(x>0);
+
+18. break: Exits a loop or switch early.
+Example: if(i==3) break;
+
+19. continue: Skips current iteration.
+Example: if(i==3) continue;
+
+20. return: Exits a method, optionally returning a value.
+Example: int sum(){ return 5; }
+
+• Object-Oriented Programming (OOP)
+
+21. class: Defines a blueprint for objects.
+Example: class Student { int age; }
+
+22. extends: Inherits from another class.
+Example: class Dog extends Animal { }
+
+23. implements: Implements an interface.
+Example: class Car implements Vehicle { void drive() {} }
+
+24. interface: Defines a method contract.
+Example: interface Vehicle { void drive(); }
+
+25. this: Refers to the current object.
+Example: this.name = name;
+
+26. super: Refers to the parent class.
+Example: super();
+
+27. new: Creates objects.
+Example: Student s = new Student();
+
+28. abstract: Declares incomplete class or method.
+Example: abstract class Shape { abstract void draw(); }
+
+29. final: Prevents changes to variable, method, or class.
+Example: final int MAX = 100;
+
+30. static: Belongs to the class, not objects.
+Example: static int count = 0;
+
+31. instanceof: Checks object type.
+Example: if(obj instanceof Student)
+
+• Access Modifiers
+
+32. public: Accessible from anywhere.
+Example: public int age;
+
+33. private: Accessible only within the class.
+Example: private int age;
+
+34. protected: Accessible in package and subclasses.
+Example: protected int age;
+
+• Exception Handling
+
+35. try: Block of code that might throw an exception.
+Example: try{ int a = 5/0; }
+
+36. catch: Handles the exception.
+Example: catch(ArithmeticException e){ System.out.println("Error"); }
+
+37. finally: Always executes after try/catch.
+Example: finally{ System.out.println("Done"); }
+
+38. throw: Throws an exception manually.
+Example: throw new Exception("Error");
+
+39. throws: Declares exceptions a method may throw.
+Example: void test() throws IOException {}
+
+• Packages and Imports
+
+40. package: Groups related classes.
+Example: package myapp;
+
+41. import: Brings external classes into scope.
+Example: import java.util.Scanner;
+
+• Multithreading & Advanced
+
+42. synchronized: Ensures only one thread executes a block at a time.
+Example: synchronized(this){ count++; }
+
+43. volatile: Variable can change unexpectedly (thread visibility).
+Example: volatile int counter;
+
+44. transient: Exclude variable from serialization.
+Example: transient int temp;
+
+45. native: Method implemented in another language.
+Example: native void callC();
+
+46. strictfp: Ensures consistent floating-point calculations.
+Example: strictfp class Calculator{}
+
+• Reserved Words and Literals
+
+47. true / false: Boolean values.
+Example: boolean b = true;
+
+48. null: No object reference.
+Example: String s = null;
+
+49. const / goto: Reserved, not used.
+
+• Modern Java Additions
+
+50. enum: Defines fixed constants.
+Example: enum Day { MON, TUE, WED }
+
+51. assert: Debug check for assumptions.
+Example: assert x>0;
+
+52. var: Let compiler infer type (Java 10+).
+Example: var name = "John";
+
+53. record: Immutable data class (Java 14+).
+Example: record Person(String name){ }
+
+54. sealed: Restricts inheritance (Java 17+).
+Example: sealed class A permits B { }
+
+55. non-sealed: Allows subclass freely from a sealed class.
+Example: non-sealed class B extends A { }
+
+56. const
+57. goto
