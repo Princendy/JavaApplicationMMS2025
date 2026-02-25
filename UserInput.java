@@ -4,7 +4,7 @@ public class UserInput{
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Please enter your full name: ");
+		System.out.print("Please enter your full name: 	");
 		String fullName = scan.nextLine();
 		
 		System.out.print("Enter your address: ");
@@ -16,7 +16,7 @@ public class UserInput{
 		System.out.print("Enter your gender(M/F): ");
 		char gender = scan.next().charAt(0);
 		
-		System.out.printf("Are you happy to learn Java?(True/False): ");
+		System.out.print("Are you happy to learn Java?(True/False): ");
 		boolean isHappy = scan.nextBoolean();
 		
 		System.out.println("");
