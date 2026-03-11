@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SentinelLoop{
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		int sum = 0;
+		
+		while(true){
+			System.out.print("Enter any number(enter -1 to end): ");
+			int num = input.nextInt();
+			
+			if(num == -1){
+				break;
+			}
+			
+			sum += num;
+		}
+		
+		System.out.printf("The sum of all the numbers is %d",sum);
+	}
+}

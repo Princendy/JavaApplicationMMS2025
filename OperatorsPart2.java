@@ -1,5 +1,4 @@
 
-
 public class OperatorsPart2{
  public static void main(String[] args){
   int num1 = 70;
