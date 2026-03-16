@@ -19,19 +19,19 @@ public class Multi_Dimensional_Array{
 		System.out.println("Using Tabular Format");
 		for(int row = 0; row < 1; row++){
 			for(int col = 0; col < 5; col++){
-				System.out.printf("%d ",num[row][col]);
+				System.out.printf("%4d ",num[row][col]);
 			}
 		}
 		System.out.println("");
 		for(int row = 1; row < 2; row++){
 			for(int col = 0; col < 5; col++){
-				System.out.printf("%d ",num[row][col]);
+				System.out.printf("%4d ",num[row][col]);
 			}
 		}
 		System.out.println("");
 		for(int row = 2; row < 3; row++){
 			for(int col = 0; col < 5; col++){
-				System.out.printf("%d ",num[row][col]);
+				System.out.printf("%4d ",num[row][col]);
 			}
 		}
 	}
